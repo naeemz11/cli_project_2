@@ -47,6 +47,8 @@ class Article
        
            #binding.pry
            Launchy.open("#{self.all[index].url}")  
+       elsif 
+           index == 1
        else 
            puts "Please select 1 or 2".red
            self.view_article_in_browser?
