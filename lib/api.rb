@@ -14,6 +14,7 @@ class Api
      def fetch_articles
         d = Time.now.strftime("%F")
         url = "http://newsapi.org/v2/everything?q=#{@query}&from=#{d}&sortBy=publishedAt&apiKey=5bbfba089a414adab493866bc5f1256f"
+        
         uri = URI(url)
         response = Net::HTTP.get(uri)
         articles = JSON.parse(response)

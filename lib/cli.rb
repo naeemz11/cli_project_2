@@ -22,7 +22,7 @@ class Cli
 
         index = self.secondary_input
         Article.display_article(index) 
-        Article.view_article_in_browser?
+        # Article.view_article_in_browser?
         self.another_article?
         #binding.pry
     end 
@@ -56,8 +56,9 @@ class Cli
         if !index.between?(0,9)
             puts "Please select articles between 1 and 10".red
             self.secondary_input
+        else      
+            index
         end 
-        index
     end 
 
     def another_article?
