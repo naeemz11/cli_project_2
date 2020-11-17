@@ -51,7 +51,7 @@ class Article
         #    self.view_article_in_browser?
         end 
 
-   
+   # LOOK AT THE NEW BRANCH
        
    end 
 
